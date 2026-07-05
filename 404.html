@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Redirecting...</title>
+    <script>
+      const repoBase = "/Data-Analytics-Portfolio/";
+      const path = window.location.pathname.replace(new RegExp(`^${repoBase.replace(/\//g, "\\/")}`), "/");
+      const target = `${repoBase}?p=${encodeURIComponent(path + window.location.search + window.location.hash)}`;
+      window.location.replace(target);
+    </script>
+  </head>
+  <body>
+    Redirecting...
+  </body>
+</html>
